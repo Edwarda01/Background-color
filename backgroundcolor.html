@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>My Background Color</title>
+</head>
+<body>
+    <div class="continer">
+        <button class="Laranja" id="bnt-laranja">Laranja</button>
+        <button class="Marrom" id="bnt-marrom">Marrom</button>
+        <button class="Azul" id="bnt-azul">Azul</button>
+    </div>
+
+    <script>
+        document.getElementById("bnt-laranja").
+        addEventListener("click", function(){
+            document.querySelector("body").setAttribute("class","Laranja");
+        }
+        )
+        document.getElementById("bnt-marrom").addEventListener("click", function() {
+            document.querySelector("body").setAttribute("class","Marrom");
+        })
+        document.getElementById("bnt-azul").addEventListener("click", function() {
+            document.querySelector("body").setAttribute("class", "Azul");
+        })
+    </script>
+</body>
+</html>
